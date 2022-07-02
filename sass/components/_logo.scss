@@ -1,0 +1,26 @@
+.page-header__logo-on-light {
+    display: block;
+    // margin-right: 93px;
+    width: 150px;
+}
+
+.logo {
+    font-family: var(--secondary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo--color_blue {
+    color: var(--accent-color);
+}
+
+.logo--color_black {
+    color: #000;
+}
+
+.logo--color_white {
+    color: #ffffff;
+}
