@@ -62,7 +62,7 @@ main {
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -71,13 +71,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -782,27 +782,47 @@ section {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/header@1x.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/hero@1x.jpg");
   height: 400px;
-  width: 480px;
+  max-width: 480px;
   background-size: cover;
   background-color: #C4C4C4;
   padding-top: 118px;
   padding-bottom: 118px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/hero@2x.jpg");
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/tablet-hero@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero/tablet-hero@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/desktop-hero@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hero/desktop-hero@2x.jpg");
   }
 }
 
@@ -940,6 +960,45 @@ section {
   display: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+    padding-top: 0;
+  }
+  .services__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    position: relative;
+  }
+  .services__item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .services__category {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    bottom: 0px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .services-category__name {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 27px;
+  }
+}
+
 .team {
   background: #F5F4FA;
 }
@@ -1051,7 +1110,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
+  max-width: 210px;
   height: 92px;
   background: #ffffff;
   border: 1px solid #AFB1B8;
@@ -1163,6 +1222,13 @@ section {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .projects__hover-style {
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
+
 .project__overlay-zone {
   position: relative;
   overflow: hidden;
@@ -1246,20 +1312,20 @@ section {
 footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
   footer {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   footer {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1318,6 +1384,12 @@ footer {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0px;
+  }
+}
+
 .footer__link {
   font-style: normal;
   font-weight: 400;
@@ -1340,7 +1412,7 @@ footer {
   margin-bottom: 8px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-contacts__item:not(:last-child) {
     margin-bottom: 9px;
   }
