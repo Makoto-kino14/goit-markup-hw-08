@@ -181,6 +181,13 @@ section {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 90vw;
+    height: auto;
+  }
+}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -1050,6 +1057,23 @@ section {
   }
 }
 
+.member__photo {
+  width: 450px;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .member__photo {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .member__photo {
+    width: 270px;
+  }
+}
+
 .member__wrapper {
   padding: 30px 10px;
 }
@@ -1234,9 +1258,20 @@ section {
   overflow: hidden;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .project__overlay-zone {
-    height: 294px;
+.project__img {
+  width: 450px;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .project__img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project__img {
+    width: 370px;
   }
 }
 

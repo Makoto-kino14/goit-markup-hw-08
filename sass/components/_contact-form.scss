@@ -107,7 +107,7 @@
             content: '';
             margin-right: 8.38px;
             border-radius: 4px;
-        }
+        }       
 
         .contact-form__checkbox:checked+&::before {
             background-color: var(--accent-color);

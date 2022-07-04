@@ -45,6 +45,18 @@
     }
 }
 
+.member__photo {
+    width: 450px;
+    height: auto;
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    } 
+    
+    @media screen and (min-width:1200px) {
+        width: 270px;
+    } 
+}
 
 .member__wrapper {
     padding: 30px 10px;
