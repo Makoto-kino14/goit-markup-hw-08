@@ -6,6 +6,10 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-light);
     margin-bottom: 12px;
+
+    @media screen and (max-width:479px) {
+        font-size: 5vw;
+    }
 }
 
 .contact-form {
@@ -26,6 +30,10 @@
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: var(--primary-text-color-theme-light);
+
+    @media screen and (max-width:479px) {
+        font-size: 2.5vw;
+    }
 }
 
 .contact-form__input {
@@ -80,6 +88,11 @@
         outline: none;
         border-color: var(--accent-color);
     }
+
+    
+    @media screen and (max-width:479px) {
+        height: 15vh;
+    }
 }
 
 .contact-form-checkbox__label {
@@ -98,10 +111,14 @@
         line-height: 1.71;
         }
 
+    @media screen and (max-width:479px) {
+        font-size: 2.5vw;
+        }
+
         &::before {
             display: block;
             width: 16px;
-            height: 15px;
+            height: 16px;
             border: 2px solid var(--primary-text-color-theme-light);
             cursor: pointer;
             content: '';
@@ -112,6 +129,7 @@
         .contact-form__checkbox:checked+&::before {
             background-color: var(--accent-color);
             background-image: url(../images/modal-window/check.svg);
+            background-position: center center;
             background-size: contain;
             background-repeat: no-repeat;
             border: 1px solid var(--accent-color);

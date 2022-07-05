@@ -67,6 +67,7 @@
 .current-link {
     color: var(--accent-color);
 
+    @media screen and (min-width:768px) {
     &::after {
         display: block;
         content: '';
@@ -77,6 +78,8 @@
         margin-top: 28px;
         position: absolute;
     }
+    }
+
 }
 
 .header-contacts {
