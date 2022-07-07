@@ -8,7 +8,8 @@
     margin-bottom: 12px;
 
     @media screen and (max-width:479px) {
-        font-size: 5vw;
+        font-size: 4vw;
+        margin-bottom: 3vh;
     }
 }
 
@@ -20,6 +21,11 @@
 .contact-form__field {
     position: relative;
     margin-bottom: 10px;
+
+    @media screen and (max-width:479px) {
+        margin-bottom: 3vh;
+
+    }
 }
 
 .contact-form__span {
@@ -76,6 +82,10 @@
     padding: 12px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width:479px) {
+        height: 24vh;
+    }
+
     &::placeholder {
         font-weight: 400;
         font-size: 12px;
@@ -113,6 +123,7 @@
 
     @media screen and (max-width:479px) {
         font-size: 2.5vw;
+        margin-bottom: 5vh;
         }
 
         &::before {
