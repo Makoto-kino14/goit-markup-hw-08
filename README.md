@@ -1,2 +1,3 @@
-# goit-markup-hw-07
- Homework #7 (BEM, SASS)
+# goit-markup-hw-08
+
+Homework # (adaptive and responsive styles)
