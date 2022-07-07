@@ -106,9 +106,9 @@
     align-items: center;
     // justify-content: space-between;
 
-        @media screen and (max-width:479px) {
-                flex-wrap: wrap;
-            }
+        // @media screen and (max-width:479px) {
+        //         flex-wrap: wrap;
+        //     }
 }
 
 .mobile-social-media__item {
@@ -145,6 +145,10 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    @media screen and (max-width:479px) {
+    font-size: 4vw;
+    }
 
 
 }
