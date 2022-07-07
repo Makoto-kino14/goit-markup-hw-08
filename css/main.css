@@ -188,14 +188,14 @@ section {
   }
 }
 
-@media screen and (min-height: 740px) {
+@media screen and (min-height: 768px) and (max-width: 767px) {
   .modal {
     width: 90vw;
     height: 86vh;
   }
 }
 
-@media screen and (min-height: 844px) {
+@media screen and (min-height: 844px) and (max-width: 767px) {
   .modal {
     width: 90vw;
     height: 80vh;
