@@ -188,6 +188,20 @@ section {
   }
 }
 
+@media screen and (min-height: 740px) {
+  .modal {
+    width: 90vw;
+    height: 86vh;
+  }
+}
+
+@media screen and (min-height: 844px) {
+  .modal {
+    width: 90vw;
+    height: 80vh;
+  }
+}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
